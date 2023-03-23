@@ -1,81 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/login_background"
-    tools:context=".MainActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="1"
+    android:background="@ref/0x7f050252"
+    android:layout_width="-1"
+    android:layout_height="-2">
 
+    <ImageView
+        android:layout_width="-1"
+        android:layout_height="-2"
+        android:src="@ref/0x7f070071"
+        android:scaleType="5" />
+
+    <TextView
+        android:textSize="dimension(6401)"
+        android:textColor="@ref/0x7f050021"
+        android:paddingTop="dimension(5122)"
+        android:layout_width="-1"
+        android:layout_height="-1"
+        android:text="Feira-Online"
+        android:textAlignment="4" />
+
+    <TextView
+        android:textSize="dimension(6401)"
+        android:textStyle="0x1"
+        android:textColor="@ref/0x7f050021"
+        android:paddingLeft="dimension(6402)"
+        android:paddingTop="dimension(5122)"
+        android:layout_width="-1"
+        android:layout_height="-1"
+        android:text="Frutas"
+        android:textAlignment="2" />
+
+    <RelativeLayout
+        android:layout_width="-1"
+        android:layout_height="-2">
+
+        <HorizontalScrollView
+            android:layout_width="-1"
+            android:layout_height="dimension(25601)">
+
+            <LinearLayout
+                android:orientation="0"
+                android:paddingLeft="dimension(6401)"
+                android:layout_width="-1"
+                android:layout_height="-1">
+
+                <ImageView
+                    android:layout_width="dimension(25601)"
+                    android:layout_height="dimension(25601)"
+                    android:src="@ref/0x7f070058"
+                    android:scaleType="2" />
+
+                <ImageView
+                    android:layout_width="dimension(25601)"
+                    android:layout_height="dimension(25601)"
+                    android:src="@ref/0x7f070058"
+                    android:scaleType="2" />
+
+                <ImageView
+                    android:layout_width="dimension(25601)"
+                    android:layout_height="dimension(25601)"
+                    android:src="@ref/0x7f070058"
+                    android:scaleType="2" />
+
+                <ImageView
+                    android:layout_width="dimension(25601)"
+                    android:layout_height="dimension(25601)"
+                    android:src="@ref/0x7f070058"
+                    android:scaleType="2" />
+
+                <ImageView
+                    android:layout_width="dimension(25601)"
+                    android:layout_height="dimension(25601)"
+                    android:src="@ref/0x7f070058"
+                    android:scaleType="2" />
+            </LinearLayout>
+        </HorizontalScrollView>
+    </RelativeLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_centerVertical="true">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="mts"
-            android:layout_gravity="center_horizontal"
-            android:textSize="21sp"
-            android:layout_marginBottom="20dp"/>
-
-        <ImageView
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:src="@drawable/logo"
-            android:layout_gravity="center_horizontal"/>
-
-        <EditText
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginTop="20dp"
-            android:hint="Email"
-            android:inputType="textEmailAddress"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/login_edit_bg"
-            android:padding="10dp"/>
-
-        <EditText
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginTop="10dp"
-            android:hint="Password"
-            android:inputType="textPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/login_edit_bg"
-            android:padding="10dp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Forgot Password?"
-            android:padding="10dp"
-            android:layout_gravity="end"/>
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:text="Sign In"
-            android:background="@drawable/button_bg"
-            android:textAllCaps="false"
-            android:textSize="21sp"
-            android:layout_marginTop="15dp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Sign Up"
-            android:textSize="21sp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="15dp"/>
+        android:background="@ref/0x7f050021"
+        android:layout_width="-1"
+        android:layout_height="dimension(2561)"
+        android:layout_marginTop="dimension(2561)">
 
     </LinearLayout>
 
-  </RelativeLayout>
+    <TextView
+        android:textSize="dimension(6401)"
+        android:textStyle="0x1"
+        android:textColor="@ref/0x7f050021"
+        android:paddingLeft="dimension(6402)"
+        android:paddingTop="dimension(5122)"
+        android:layout_width="-1"
+        android:layout_height="-1"
+        android:text="Verduras"
+        android:textAlignment="2" />
+
+    <ScrollView
+        android:layout_width="-1"
+        android:layout_height="-1">
+
+        <RelativeLayout
+            android:layout_width="-1"
+            android:layout_height="-1">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="-1"
+                android:layout_height="-2"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:spanCount="1" />
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
